@@ -1,0 +1,73 @@
+.present-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  cursor: default;
+}
+
+.present-container {
+  width: 1333px;
+  height: 750px;
+  transform-origin: center;
+  display: flex;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+  background: white;
+  pointer-events: none; /* Let overlay catch clicks */
+}
+
+.present-container .slide {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+.present-controls {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  padding: 8px 16px;
+  border-radius: 24px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  color: white;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0;
+  transition: opacity 0.3s;
+  backdrop-filter: blur(8px);
+}
+
+.present-overlay:hover .present-controls {
+  opacity: 1;
+}
+
+.present-controls button {
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background 0.15s;
+}
+
+.present-controls button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}

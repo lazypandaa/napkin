@@ -1,0 +1,198 @@
+.slide {
+  display: flex;
+  background: #ffffff;
+  min-height: 480px;
+  width: 100%;
+  position: relative;
+}
+
+/* ── Title slide ── */
+.slide-title-layout {
+  flex-direction: row;
+}
+
+.slide-title-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+}
+
+.slide-main-title {
+  font-size: 38px;
+  font-weight: 800;
+  color: #1a1a1a;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+.slide-subtitle {
+  font-size: 17px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.slide-meta {
+  font-size: 13px;
+  color: #aaa;
+  margin-top: 8px;
+}
+
+/* ── Bullets slide ── */
+.slide-bullets-layout {
+  flex-direction: row;
+}
+
+/* ── Image panel ── */
+.slide-image-panel {
+  width: 42%;
+  flex-shrink: 0;
+  overflow: hidden;
+  background: #f0f0f0;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ── Content panel ── */
+.slide-content-panel {
+  flex: 1;
+  padding: 40px 44px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+}
+
+.slide-content-panel.full-width {
+  width: 100%;
+}
+
+.slide-heading {
+  font-size: 28px;
+  font-weight: 800;
+  color: #1a1a1a;
+  line-height: 1.25;
+  letter-spacing: -0.3px;
+}
+
+.slide-divider {
+  height: 3px;
+  width: 48px;
+  background: #6c47ff;
+  border-radius: 2px;
+  margin: 2px 0 6px;
+}
+
+.slide-description {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+/* ── Bullets ── */
+.slide-bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.slide-bullet {
+  display: flex;
+  gap: 10px;
+  font-size: 14.5px;
+  color: #2a2a2a;
+  line-height: 1.55;
+  align-items: flex-start;
+}
+
+.bullet-dot {
+  color: #6c47ff;
+  font-size: 12px;
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+/* ── Two column ── */
+.slide-two-col-layout { flex-direction: row; }
+
+.two-col-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-top: 8px;
+}
+
+.col-block { display: flex; flex-direction: column; gap: 10px; }
+
+.col-label {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #6c47ff;
+}
+
+/* ── Quote ── */
+.slide-quote-layout { flex-direction: row; }
+.quote-center { justify-content: center; text-align: center; align-items: center; }
+.quote-center .slide-divider { margin: 2px auto 6px; }
+
+.slide-quote {
+  font-size: 22px;
+  font-style: italic;
+  color: #1a1a1a;
+  line-height: 1.6;
+  max-width: 640px;
+  margin: 8px auto;
+}
+
+.slide-author {
+  font-size: 15px;
+  font-weight: 600;
+  color: #6c47ff;
+  margin-top: 4px;
+}
+
+/* ── Stats ── */
+.slide-stats-layout { flex-direction: row; }
+
+.stats-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 12px 0;
+}
+
+.stat-card {
+  background: #f7f5ff;
+  border: 1px solid #e0d9ff;
+  border-radius: 10px;
+  padding: 18px 24px;
+  min-width: 120px;
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 32px;
+  font-weight: 800;
+  color: #6c47ff;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: #666;
+  margin-top: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.mt-16 { margin-top: 16px; }

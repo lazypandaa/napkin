@@ -1,0 +1,101 @@
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 52px;
+  padding: 0 16px;
+  background: #ffffff;
+  border-bottom: 1px solid #e8e8e8;
+  flex-shrink: 0;
+  z-index: 100;
+}
+
+.topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.topbar-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  color: #555;
+  transition: background 0.15s;
+}
+.topbar-back:hover { background: #f0f0f0; }
+
+.topbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 700;
+  font-size: 15px;
+  color: #1a1a1a;
+}
+
+.logo-icon {
+  font-size: 18px;
+  color: #6c47ff;
+}
+
+.topbar-sep { color: #ccc; font-size: 18px; }
+
+.topbar-title {
+  font-size: 14px;
+  color: #444;
+  max-width: 320px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-ghost {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 12px;
+  border-radius: 7px;
+  font-size: 13px;
+  color: #444;
+  font-weight: 500;
+  transition: background 0.15s;
+}
+.btn-ghost:hover { background: #f0f0f0; }
+
+.btn-primary {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 14px;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  background: #f0f0f0;
+  color: #1a1a1a;
+  transition: background 0.15s;
+}
+.btn-primary:hover { background: #e4e4e4; }
+
+.btn-present {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 16px;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  background: #6c47ff;
+  color: white;
+  transition: background 0.15s;
+}
+.btn-present:hover { background: #5a38e0; }

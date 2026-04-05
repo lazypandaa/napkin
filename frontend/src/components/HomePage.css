@@ -1,0 +1,137 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: #ffffff;
+}
+
+.home-header {
+  display: flex;
+  align-items: center;
+  height: 52px;
+  padding: 0 28px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.home-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 17px;
+  font-weight: 800;
+  color: #1a1a1a;
+}
+
+.logo-icon { font-size: 20px; color: #6c47ff; }
+
+.home-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  padding: 40px 24px;
+}
+
+.home-hero {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.hero-title {
+  font-size: 44px;
+  font-weight: 800;
+  color: #1a1a1a;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.hero-sub {
+  font-size: 17px;
+  color: #666;
+  max-width: 440px;
+  line-height: 1.6;
+}
+
+.hero-actions {
+  margin-top: 8px;
+  display: flex;
+  gap: 12px;
+}
+
+.btn-create {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  background: #6c47ff;
+  color: white;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  transition: background 0.15s, transform 0.1s;
+  box-shadow: 0 4px 16px rgba(108,71,255,0.3);
+}
+
+.btn-create:hover:not(:disabled) {
+  background: #5a38e0;
+  transform: translateY(-1px);
+}
+
+.btn-create:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.examples-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.examples-label {
+  font-size: 13px;
+  color: #aaa;
+  font-weight: 500;
+}
+
+.examples-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  max-width: 600px;
+}
+
+.example-chip {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border: 1.5px solid #e8e8e8;
+  border-radius: 20px;
+  font-size: 13px;
+  color: #444;
+  background: #fafafa;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.example-chip:hover {
+  border-color: #6c47ff;
+  background: #f7f5ff;
+  color: #6c47ff;
+}
+
+.spinner-dark {
+  width: 15px;
+  height: 15px;
+  border: 2px solid rgba(255,255,255,0.4);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  display: inline-block;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }

@@ -1,0 +1,8 @@
+huggingface_hub
+python-pptx
+python-dotenv
+requests
+lxml
+mcp
+fastapi
+uvicorn
