@@ -4,6 +4,8 @@
 
 An agentic system that accepts a single-sentence prompt and autonomously produces a fully themed `.pptx` file — via both a React web UI and a CLI.
 
+![UI Preview](docs/ui.png)
+
 ---
 
 ## Architecture (Dual-MCP)
