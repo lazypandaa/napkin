@@ -167,16 +167,6 @@ Output is saved inside `assignment/docs/`.
 
 ---
 
-## Grading Rubric Coverage
-
-| Criteria | How it's met | Grade |
-|---|---|---|
-| **Agentic Planning** | LLM plans the full slide outline + content before any MCP tool is called | Excellent (25/25) |
-| **MCP Usage** | **Dual** custom MCP servers (`mcp_server.py` & `web_search_mcp.py`) orchestrating together | Excellent (25/25) |
-| **PPT Quality** | High-fidelity React Canvas, 4 layout types, Web images, speaker notes, dynamic layouts | Excellent (25/25) |
-| **Robustness** | JSON parse fallback, graceful error handling, `--no-images` mode | Excellent (25/25) |
-
----
 
 ## Deliverables
 
